@@ -1,0 +1,24 @@
+.site-list {
+  .list-reset();
+  display: flex;
+  justify-content: space-between;
+  width: 520px;
+}
+
+.site-list__link {
+  font-family: "Raleway", "Arial", sans-serif;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: @darkyellow;
+  }
+
+  &:active {
+    color: @yellow;
+  }
+}
+
+.site-list__link--active {
+  color: @yellow;
+}
