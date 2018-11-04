@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preload" href="fonts/montserrat-v12-latin_cyrillic-ext-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v12-latin_cyrillic-ext-500.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/raleway-v12-latin_latin-ext-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/raleway-v12-latin_latin-ext-500.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/raleway-v12-latin_latin-ext-600.woff2" as="font" crossorigin>
   <link rel="stylesheet" href="libr/css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Penelopa</title>
@@ -16,10 +21,10 @@
           <li class="contacts__item contacts__item--address">
             Республика Беларусь, г. Брест, ул. Лейтенанта Рябцева, 90-2</li>
           <li class="contacts__item contacts__item--phone">
-            <a class="contacts__link contacts__link--phone" href="tel:+375 (29) 798-40-93">
+            <a class="contacts__link contacts__link--phone" href="tel:+375(29)798-40-93">
               +375 (29) 798-40-93;
             </a>
-            <a class="contacts__link contacts__link--phone" href="tel:+375 (29) 727-32-14">
+            <a class="contacts__link contacts__link--phone" href="tel:+375(29)727-32-14">
               +375 (29) 727-32-14
             </a>
           </li>
@@ -58,8 +63,361 @@
             </li>
           </ul>
         </nav>
+        <a class="site-button" href="">
+          ПОЗВОНИТЬ
+        </a>
       </div>
     </div>
   </header>
+
+  <main>
+    <section class="promo">
+      <div class="promo__wrapper">
+        <div class="promo__title-wrapper">
+          <h1 class="visually-hidden">Penelopa</h1>
+          <img src="img/icon/penelopa-ttle-icon.png" width="531" height="135" alt="Penelopa">
+        </div>
+        <div class="promo__text">
+          <p class="promo__main-text">
+            Профессиональный пошив одежды из давальческого сырья
+          </p>
+          <p class="promo__other-text">
+            Вместе мы можем больше...
+          </p>
+        </div>
+        <a class="promo__button site-button site-button--promo" href="">НАПИСАТЬ ПИСЬМО </a>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <div class="about-us__wrapper">
+        <h2 class="about-us__title site-title">О НАС</h2>
+        <div class="about-us__info">
+          <div class="about-us__description">
+            <h3 class="about-us__title-second">ООО «Пенелопа»</h3>
+            <p class="about-us__text">
+              ООО «Пенелопа» - это команда профессионалов, целью которой является воплощение в жизнь Ваших идей.
+            </p>
+            <p class="about-us__text">
+              Мы осуществляем профессиональный пошив изделий на заказ в Бресте, Белоруссия для заказчиков из стран Европейского союза и Российской Федерации. Производственная мощность нашей компании позволяет выпускать до 10000 единиц изделий в месяц.
+            </p>
+            <p class="about-us__text">
+              Наши услуги будут особенно интересны:
+            </p>
+            <ul class="about-us__text-list">
+              <li class="about-us__text-item">
+                Крупным производителям одежды для размещения заказов на пошив больших партий
+              </li>
+              <li class="about-us__text-item">
+                Дизайнерам для создания авторских коллекций
+              </li>
+              <li class="about-us__text-item">
+                Компаниям, которым необходимо разработать и создать корпоративную одежду для своих сотрудников
+              </li>
+              <li class="about-us__text-item">
+                Также наша компания приглашает к сотрудничеству отели, рестораны, пасионаты, базы отдыха
+              </li>
+            </ul>
+            <p class="about-us__text">
+              Для обеспечения бесперебойной работы технологическое оснащение компании постоянно модернизируется.
+            </p>
+            <p class="about-us__text">
+              Ответственный подход к своей работе делает возможным гарантировать качество и безопасность выпускаемой продукции.
+            </p>
+          </div>
+          <div class="about-us__photo">
+            <picture>
+              <img class="about-us__image" src="img/about-us-photo@1x.jpg" srcset="img/about-us-photo@2x.jpg 2x" alt="Workflow">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantage">
+      <div class="advantage__wrapper">
+        <h1 class="visually-hidden">Наши преимущества</h1>
+        <ul class="advantage__list">
+          <li class="advantage__item advantage__item--quality">Высокое качество</li>
+          <li class="advantage__item advantage__item--standarts">Международные стандарты</li>
+          <li class="advantage__item advantage__item--rocket">Оперативность</li>
+          <li class="advantage__item advantage__item--production">Собственное производство </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="our-services">
+      <div class="our-services__wrapper">
+        <h2 class="our-services__title site-title">НАШИ УСЛУГИ</h2>
+        <ul class="our-services__list">
+          <li class="our-services__item">
+            <div class="our-services__info">
+              <h3 class="our-services__item-title">Пошив изделий</h3>
+              <p class="our-services__description">
+                Как мы это делаем:
+              </p>
+                <ul class="our-services__description-list">
+                  <li class="our-services__description-item">
+                    Проверяем качество сырья
+                  </li>
+                  <li class="our-services__description-item">
+                    Предлагаем максимально рациональное использование материала</li>
+                  <li class="our-services__description-item">
+                    Профессионально кроим
+                  </li>
+                  <li class="our-services__description-item">
+                    Прошиваем на всех видах швейного  оборудования
+                  </li>
+                  <li class="our-services__description-item">
+                    Оперативно согласовываем с заказчиком любые возникающие вопросы и предлагаем варианты их решения
+                  </li>
+                  <li class="our-services__description-item">
+                    Контролируем качество на всех стадиях производства
+                  </li>
+                  <li class="our-services__description-item">
+                    Упаковываем готовую продукцию
+                  </li>
+                </ul>
+            </div>
+            <div class="our-services__photo">
+              <picture>
+                <img src="img/services-image@1x.jpg" srcset="img/services-image@2x.jpg 2x" alt="Services image">
+              </picture>
+            </div>
+          </li>
+          <li class="our-services__item our-services__item--second">
+            <div class="our-services__photo our-services__photo--second">
+              <picture>
+                <img src="img/design-image@1x.jpg" srcset="img/design-image@2x.jpg 2x" alt="Design image">
+              </picture>
+            </div>
+            <div class="our-services__info our-services__info--small">
+              <h3 class="our-services__item-title">Дизайн и конструирование</h3>
+              <p class="our-services__description">
+                Как мы это делаем:
+              </p>
+                <ul class="our-services__description-list">
+                  <li class="our-services__description-item">
+                    Разрабатываем дизайн модели или целой коллекции
+                  </li>
+                  <li class="our-services__description-item">
+                    Конструируем модель по экскизам, фото либо образцам
+                  </li>
+                  <li class="our-services__description-item">
+                    Отшиваем опытный образец
+                  </li>
+                </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="why-we">
+      <div class="why-we__wrapper">
+        <h2 class="why-we__title site-title">ПОЧЕМУ МЫ</h2>
+        <ul class="why-we__list">
+          <li class="why-we__item">
+            <div class="why-we__info">
+              <h3 class="why-we__info-title">
+                Низакая стоимость производства продукции
+              </h3>
+              <p class="why-we__info__text">
+                Оптимизация инфраструктурных и налоговых платежей позволяет предлагать приемлемую стоимость работ.
+              </p>
+            </div>
+            <div class="why-we__photo">
+              <picture>
+                <img src="img/why-me-photo1@1x.jpg" srcset="img/why-me-photo1@2x.jpg 2x" alt="Cost">
+              </picture>
+            </div>
+          </li>
+          <li class="why-we__item">
+            <div class="why-we__photo">
+              <picture>
+                <img src="img/why-me-photo2@1x.jpg" srcset="img/why-me-photo2@2x.jpg 2x" alt="Logistic">
+              </picture>
+            </div>
+            <div class="why-we__info">
+              <h3 class="why-we__info-title">
+                Удобная логистика
+              </h3>
+              <p class="why-we__info__text">
+                Удобное расположение на границе с Европейским союзом позволяет нам выгодно сотрудничать как с российскими, так и с европейскими компаниями. За счет удобной логистики мы обеспечиваем минимальный срок реализации от идеи до готового изделия в магазине. Имеем опыт таможенного оформления.
+              </p>
+            </div>
+          </li>
+          <li class="why-we__item">
+            <div class="why-we__info">
+              <h3 class="why-we__info-title">
+                Ускорение бизнес-цикла
+              </h3>
+              <p class="why-we__info__text">
+                - Гибкость и эффективность бизнес процессов
+              </p>
+              <p class="why-we__info__text">
+                - Быстрота реагирования на запросы заказчика
+              </p>
+              <p class="why-we__info__text">
+                - Пошив небольших партий и оперативная их доставка, что избавляет заказчика от единовременных крупных вложений
+              </p>
+              <p class="why-we__info__text">
+                - Изготовление коллекций в "диалоговом режиме" с заказчиком
+              </p>
+            </div>
+            <div class="why-we__photo">
+              <picture>
+                <img src="img/why-me-photo3@1x.jpg" srcset="img/why-me-photo3@2x.jpg 2x" alt="Cost">
+              </picture>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact-us">
+      <div class="contact-us__wrapper">
+        <h2 class="contact-us__title site-title">СВЯЗАТЬСЯ С НАМИ</h2>
+        <div class="contact-us__info">
+          <div class="contact-us__description">
+            <h3 class="contact-us__description-title">РАССЧИТАТЬ ЗАКАЗ</h3>
+            <p class="contact-us__main-text">
+              Укажите следующую информацию:
+            </p>
+            <p class="contact-us__text">
+              - Вид сырья
+            </p>
+            <p class="contact-us__text">
+              - Количество единиц
+            </p>
+            <p class="contact-us__text">
+              - Данные о наличии образца, эскиза модели
+            </p>
+            <p class="contact-us__text">
+              - Особенности обработки (например, наличие подкладки, внутренних карманов и т.д.)
+            </p>
+            <p class="contact-us__text">
+              - Сроки изготовления
+            </p>
+          </div>
+          <div class="contact-us__photo">
+            <picture>
+              <img class="" src="img/contact-us-photo@1x.jpg" srcset="img/contact-us-photo@2x.jpg 2x" alt="Contact image">
+            </picture>
+          </div>
+        </div>
+        <form class="contact-us__form" action="#" method="POST">
+          <div class="contact-us__form-left">
+            <input type="text" placeholder="Ваше имя*" required>
+            <input type="tel" placeholder="Ваш телефон*" required>
+            <input type="email" placeholder="Ваш email*" required>
+          </div>
+          <div class="contact-us__form-right">
+            <textarea name="comments" cols="30" rows="10" placeholder="Ваш комментарий. Для наиболее качественного расчета укажите максимально подробные данные"></textarea>
+            <div class="contact-us__select-file">
+              <label class="contact-us__file-label">Прикрепить файл</label>
+              <div class="contact-us__file-wpapper">
+                <input class="contact-us__file-value" id="file" type="text" placeholder="Название выбранного файла" readonly>
+                <label for="file">Выбрать файл</label>
+              </div>
+            </div>
+            <div class="contact-us__consent">
+              <input class="visually-hidden" type="checkbox" name="consent" id="consent">
+              <label for="consent">Я даю свое согласие на обработку персональных данных</label>
+              <button class="contact-us__button site-button" type="submit">Запросить расчет</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="contacts-us__buffer"></div>
+    </section>
+    <div class="map">
+      <div class="map__wrapper">
+        <h2 class="map__title site-title">Наши контакты</h2>
+        <div class="map-info">
+          <h3 class="map-info__title">Нас легко найти!</h3>
+          <div class="map-info__description">
+            <p class="map-info__item">
+              Адрес:
+            </p>
+            <p class="map-info__value">
+              224005, Республика Беларусь, Брест, ул. Лейтенанта Рябцева 90-2
+            </p>
+          </div>
+          <div class="map-info__description">
+            <p class="map-info__item">
+              График:
+            </p>
+            <p class="map-info__value">
+              Пн.-Сб. с 9:00 до 18:00
+            </p>
+          </div>
+          <div class="map-info__description">
+            <p class="map-info__item">
+              Email:
+            </p>
+            <p class="map-info__value">
+              mail@penelopa.pro
+            </p>
+          </div>
+          <div class="map-info__description map-info__description--phone">
+            <p class="map-info__item">
+              Телефоны:
+            </p>
+            <p class="map-info__value map-info__value--phone">
+              +375 (29) 798-40-93
+              +375 (29) 727-32-14
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="map__image">
+        <picture>
+          <img class="map__image-item" src="img/map@1x.jpg" srcset="img/map@2x.jpg 2x" alt="Map">
+        </picture>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__top">
+        <b class="page-footer__company-name">ООО «Пенелопа»</b>
+        <nav class="main-nav">
+          <ul class="site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="">О НАС</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">УСЛУГИ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active" href="">ПОЧЕМУ МЫ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="site-button site-button--footer" href="">Связаться с нами</a>
+      </div>
+      <div class="page-footer__bottom">
+        <ul class="contacts contacts--footer">
+          <li class="contacts__item contacts__item--address">
+            Республика Беларусь, г. Брест, ул. Лейтенанта Рябцева, 90-2</li>
+          <li class="contacts__item contacts__item--phone">
+            <a class="contacts__link contacts__link--phone" href="tel:+375(29)798-40-93">
+              +375 (29) 798-40-93;
+            </a>
+            <a class="contacts__link contacts__link--phone" href="tel:+375(29)727-32-14">
+              +375 (29) 727-32-14
+            </a>
+          </li>
+          <li class="contacts__item contacts__item--email">
+            <a class="contacts__link" href="mailto:example@gmail.com">example@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
