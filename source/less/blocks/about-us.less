@@ -1,7 +1,7 @@
 .about-us__wrapper {
   width: 1170px;
   margin:  0 auto;
-  padding-top: 100px;
+  padding-top: 96px;
   padding-bottom: 90px;
   font-family: inherit;
 }
@@ -9,7 +9,7 @@
 .about-us__info {
   display: flex;
   justify-content: space-between;
-  margin-top: 60px;
+  margin-top: 58px;
 }
 
 .about-us__title-second {
@@ -21,19 +21,26 @@
 .about-us__description {
   width: 570px;
   font-size: 16px;
+  line-height: 24px
 }
 
 .about-us__text {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 12px;
+  color: @dark;
+}
+
+.about-us__text--first {
+  margin-top: 28px;
 }
 
 .about-us__text-list {
   .list-reset();
+  color: @dark;
 }
 
 .about-us__text-item {
-  margin-top: 15px;
+  margin-top: 11px;
   padding-left: 28px;
   background-image: url("../img/icon/check-icon.svg");
   background-repeat: no-repeat;
@@ -41,17 +48,20 @@
   background-position: 0 5px;
 }
 
+.about-us__text-item--first {
+  margin-top: 8px;
+}
+
 .about-us__photo {
   position: relative;
   width: 512px;
-  margin-right: 73px;
-  padding-top: 66px;
+  padding-top: 72px;
 
   &::after {
     content: "";
     position: absolute;
-    top: -5px;
-    right: -73px;
+    top: 3px;
+    left: -76px;
     width: 415px;
     height: 348px;
     background-image: url(../img/border.svg);
