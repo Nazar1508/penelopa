@@ -2,7 +2,7 @@
   background-color: #312d2c;
   background-image: url("../img/promo-bg@1x.jpg");
   background-size: cover;
-  background-position: -340px 0;
+  background-position: 50% 0;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/promo-bg@2x.jpg");
@@ -58,4 +58,20 @@
   display: block;
   padding: 18px 27px;
   margin-top: 63px;
+}
+
+@media (max-width: 1230px) {
+  .promo__wrapper {
+    width: 680px;
+  }
+
+  .promo__main-text {
+    width: 660px;
+  }
+}
+
+@media (max-width: 700px) {
+  .promo__wrapper {
+    width: 290px;
+  }
 }

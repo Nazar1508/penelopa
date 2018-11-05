@@ -5,7 +5,7 @@
   background-image: url(../img/services-bg@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -349px 0;
+  background-position: 50% 0;
 
   &::before {
     content: "";
@@ -143,4 +143,27 @@
 .our-services__description-item--second {
   width: 345px;
   padding-left: 38px;
+}
+
+@media (max-width: 1230px) {
+  .our-services__wrapper {
+    width: 680px;
+  }
+
+  .our-services__item {
+    display: block;
+  }
+
+  .our-services__photo {
+    margin-left: auto;
+  }
+
+  .our-services__photo--second {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  .our-services__info--small {
+    margin-left: auto;
+  }
 }

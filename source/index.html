@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="preload" href="fonts/montserrat-v12-latin_cyrillic-ext-regular.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/montserrat-v12-latin_cyrillic-ext-500.woff2" as="font" crossorigin>
@@ -46,9 +46,12 @@
       <div class="page-header__bottom-wrapper">
         <div class="logo">
           <img class="logo-image" width="225" height="57" src="img/icon/logo.svg" alt="Logo">
+          <img class="logo-mobile-image" width="185" height="47" src="img/icon/logo-mobile.png" alt="Logo">
         </div>
         <nav class="main-nav">
-          <ul class="main-nav__list site-list">
+          <button class="nav-button nav-button--open"></button>
+          <button class="nav-button nav-button--close nav-button--hide"></button>
+          <ul class="main-nav__list site-list site-list--close">
             <li class="site-list__item">
               <a class="site-list__link" href="">О НАС</a>
             </li>
@@ -63,7 +66,7 @@
             </li>
           </ul>
         </nav>
-        <a class="page-header__button site-button" href="">
+        <a class="page-header__button site-button site-button--header" href="">
           ПОЗВОНИТЬ
         </a>
       </div>
@@ -233,7 +236,7 @@
             <div class="why-we__photo">
               <picture>
                 <source type="image/webp" srcset="img/webp/why-me-photo1@1x.webp 1x, img/webp/why-me-photo1@2x.webp 2x">
-                <img src="img/why-me-photo1@1x.jpg" srcset="img/why-me-photo1@2x.jpg 2x" alt="Cost">
+                <img class="why-we__photo-1" src="img/why-me-photo1@1x.jpg" srcset="img/why-me-photo1@2x.jpg 2x" alt="Cost">
               </picture>
             </div>
           </li>
@@ -241,7 +244,7 @@
             <div class="why-we__photo">
               <picture>
                 <source type="image/webp" srcset="img/webp/why-me-photo2@1x.webp 1x, img/webp/why-me-photo2@2x.webp 2x">
-                <img src="img/why-me-photo2@1x.jpg" srcset="img/why-me-photo2@2x.jpg 2x" alt="Logistic">
+                <img class="why-we__photo-2" src="img/why-me-photo2@1x.jpg" srcset="img/why-me-photo2@2x.jpg 2x" alt="Logistic">
               </picture>
             </div>
             <div class="why-we__info why-we__info--second">
@@ -274,7 +277,7 @@
             <div class="why-we__photo">
               <picture>
                 <source type="image/webp" srcset="img/webp/why-me-photo3@1x.webp 1x, img/webp/why-me-photo3@2x.webp 2x">
-                <img src="img/why-me-photo3@1x.jpg" srcset="img/why-me-photo3@2x.jpg 2x" alt="Cost">
+                <img class="why-we__photo-3" src="img/why-me-photo3@1x.jpg" srcset="img/why-me-photo3@2x.jpg 2x" alt="Cost">
               </picture>
             </div>
           </li>
@@ -385,6 +388,7 @@
           <source type="image/webp" srcset="img/webp/map@1x.webp 1x, img/webp/map@2x.webp 2x">
           <img class="map__image-item" src="img/map@1x.jpg" srcset="img/map@2x.jpg 2x" alt="Map">
         </picture>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.4188841684963!2d23.672624682648088!3d52.13513457688566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4721090af341edfd%3A0xb8939a4c2f16892a!2z0LLRg9C70ZbRhtCwINCb0LXQudGC0Y3QvdCw0L3RgtCwINCg0LDQsdGG0LDQstCwIDkwLCDQkdGA0Y3RgdGCIDIyNDAyNSwg0JHRltC70L7RgNGD0YHRjA!5e0!3m2!1suk!2sua!4v1541441806991" width="600" height="450" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
   </main>
@@ -427,5 +431,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

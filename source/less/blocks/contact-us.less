@@ -133,7 +133,7 @@
 .contact-us__file-wpapper label {
   width: 150px;
   margin-left: -5px;
-  padding: 20px 10px;
+  padding: 19px 9px;
   color: @dark;
   background-image:
     linear-gradient(to bottom, #ffffff, #999896);
@@ -172,7 +172,7 @@
     content: "";
     position: absolute;
     top: 3px;
-    left: 6px;
+    left: 7px;
     width: 4px;
     height: 10px;
     border: 2px solid #000000;
@@ -200,4 +200,27 @@
   margin-top: 88px;
   height: 204px;
   background-color: rgba(255, 255, 255, 0.27);
+}
+
+@media (max-width: 1230px) {
+  .contact-us__wrapper {
+    width: 680px;
+  }
+
+  .contact-us__info {
+    display: block;
+  }
+
+  .contact-us__photo {
+    margin-left: auto;
+    margin-top: 30px;
+  }
+
+  .contact-us__form-right textarea {
+    margin-top: 20px;
+  }
+
+  .contact-us__form {
+    flex-direction: column;
+  }
 }
