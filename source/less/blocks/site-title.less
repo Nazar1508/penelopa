@@ -6,6 +6,7 @@
   font-weight: 600;
   font-size: 30px;
   font-family: "Raleway SemiBold", "Arial", sans-serif;
+  text-transform: uppercase;
 
   &::after {
     content: "";
@@ -15,6 +16,17 @@
     background-color: #f7ab00;
     left: 50%;
     bottom: 0;
-    transform: translateX(-71.5px);
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 700px) {
+  .site-title {
+    font-size: 18px;
+    padding-bottom: 9px;
+
+    &::after {
+      width: 76px;
+    }
   }
 }

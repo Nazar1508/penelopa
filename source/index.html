@@ -34,10 +34,10 @@
         </ul>
         <ul class="language">
           <li class="language__item">
-            <a class="language__link language__link--active" href="">RU</a>
+            <a class="language__link language__link--active">RU</a>
           </li>
           <li class="language__item">
-            <a class="language__link" href="">EN</a>
+            <a class="language__link" href="english.html">EN</a>
           </li>
         </ul>
       </div>
@@ -53,16 +53,16 @@
           <button class="nav-button nav-button--close nav-button--hide"></button>
           <ul class="main-nav__list site-list site-list--close">
             <li class="site-list__item">
-              <a class="site-list__link" href="">О НАС</a>
+              <a class="site-list__link site-list__link--mobile" href="">О НАС</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="">УСЛУГИ</a>
+              <a class="site-list__link site-list__link--mobile" href="">УСЛУГИ</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--active" href="">ПОЧЕМУ МЫ</a>
+              <a class="site-list__link site-list__link--active site-list__link--mobile" href="">ПОЧЕМУ МЫ</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="">КОНТАКТЫ</a>
+              <a class="site-list__link site-list__link--mobile" href="">КОНТАКТЫ</a>
             </li>
           </ul>
         </nav>
@@ -78,7 +78,8 @@
       <div class="promo__wrapper">
         <div class="promo__title-wrapper">
           <h1 class="visually-hidden">Penelopa</h1>
-          <img src="img/icon/penelopa-ttle-icon.png" width="531" height="135" alt="Penelopa">
+          <img class="promo-image" src="img/icon/penelopa-ttle-icon.png" width="531" height="135" alt="Penelopa">
+          <img class="promo-image-mobile" src="img/icon/penelopa-ttle-icon-mobile.png" width="135" height="35" alt="Penelopa">
         </div>
         <div class="promo__text">
           <p class="promo__name">швейная фабрика</p>
@@ -90,6 +91,7 @@
           </p>
         </div>
         <a class="promo__button site-button site-button--promo" href="">НАПИСАТЬ ПИСЬМО </a>
+        <a class="promo__button-mobile site-button site-button--promo-second" href="">наши контакты</a>
       </div>
     </section>
 
@@ -112,13 +114,13 @@
               <li class="about-us__text-item about-us__text-item--first">
                 Крупным производителям одежды для размещения заказов на пошив больших партий
               </li>
-              <li class="about-us__text-item">
+              <li class="about-us__text-item about-us__text-item--2">
                 Дизайнерам для создания авторских коллекций
               </li>
-              <li class="about-us__text-item">
+              <li class="about-us__text-item about-us__text-item--3">
                 Компаниям, которым необходимо разработать и создать корпоративную одежду для своих сотрудников
               </li>
-              <li class="about-us__text-item">
+              <li class="about-us__text-item about-us__text-item--4">
                 Также наша компания приглашает к сотрудничеству отели, рестораны, пасионаты, базы отдыха
               </li>
             </ul>
@@ -131,7 +133,10 @@
           </div>
           <div class="about-us__photo">
             <picture>
+              <source type="image/webp" media="(min-width: 700px)" srcset="img/webp/about-us-photo-mobie@1x.webp 1x, img/webp/about-us-photo-mobile@2x.webp 2x">
               <source type="image/webp" srcset="img/webp/about-us-photo@1x.webp 1x, img/webp/about-us-photo@2x.webp 2x">
+
+              <source media="(max-width: 700px)" srcset="img/about-us-photo-mobie@1x.jpg 1x, img/about-us-photo-mobie@2x.jpg 2x">
               <img class="about-us__image" src="img/about-us-photo@1x.jpg" srcset="img/about-us-photo@2x.jpg 2x" alt="Workflow">
             </picture>
           </div>
@@ -217,6 +222,7 @@
             </div>
           </li>
         </ul>
+        <a class="our-services__button site-button site-button--services" href="">cвязаться с нами</a>
       </div>
     </section>
 
@@ -243,7 +249,10 @@
           <li class="why-we__item why-we__item--second">
             <div class="why-we__photo">
               <picture>
+                <source type="image/webp" media="(min-width: 300px)" srcset="img/webp/why-me-photo2-mobile@1x.webp 1x, img/webp/why-me-photo2-mobile@2x.webp 2x">
                 <source type="image/webp" srcset="img/webp/why-me-photo2@1x.webp 1x, img/webp/why-me-photo2@2x.webp 2x">
+
+                <source media="(max-width: 300px)" srcset="img/why-me-photo2-mobile@1x.jpg 1x, img/why-me-photo2-mobile@2x.jpg 2x">
                 <img class="why-we__photo-2" src="img/why-me-photo2@1x.jpg" srcset="img/why-me-photo2@2x.jpg 2x" alt="Logistic">
               </picture>
             </div>
@@ -339,6 +348,22 @@
             </div>
           </div>
         </form>
+
+
+        <form class="contact-us__form contact-us__form--second" action="#" method="POST">
+          <p class="contact-us__form-title">
+            Остались вопросы?<br>Отправьте заявку, мы свяжемся с Вами
+          </p>
+          <div class="contact-us__form-left">
+            <input type="tel" placeholder="Ваш телефон*" required>
+            <input type="email" placeholder="Ваш email*" required>
+          </div>
+          <div class="contact-us__consent">
+            <input class="visually-hidden" type="checkbox" name="consent" id="consen">
+            <label for="consen">Я даю свое согласие на обработку персональных данных</label>
+            <button class="contact-us__button site-button site-button--rorm" type="submit">получить консультацию</button>
+          </div>
+        </form>
       </div>
       <div class="contacts-us__buffer"></div>
     </section>
@@ -360,7 +385,7 @@
             <p class="map-info__item map-info__item--time">
               График:
             </p>
-            <p class="map-info__value">
+            <p class="map-info__value map-info__value--time">
               Пн.-Сб. с 9:00 до 18:00
             </p>
           </div>
@@ -396,7 +421,7 @@
     <div class="page-footer__wrapper">
       <div class="page-footer__top">
         <b class="page-footer__company-name">ООО «Пенелопа»</b>
-        <ul class="page-footer__list site-list">
+        <ul class="page-footer__list site-list site-list--footer">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--footer" href="">О НАС</a>
           </li>
@@ -410,6 +435,7 @@
             <a class="page-footer__link site-list__link site-list__link--footer" href="">КОНТАКТЫ</a>
           </li>
         </ul>
+        <span class="page-footer__politic">Политика конфиденциальности</span>
         <a class="site-button site-button--footer" href="">Связаться с нами</a>
       </div>
       <div class="page-footer__bottom">

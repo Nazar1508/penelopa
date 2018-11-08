@@ -102,7 +102,7 @@
     color: @gray;
   }
 
-  &::focus {
+  &:focus {
     color: @dark;
   }
 }
@@ -135,8 +135,7 @@
   margin-left: -5px;
   padding: 19px 9px;
   color: @dark;
-  background-image:
-    linear-gradient(to bottom, #ffffff, #999896);
+  background-image: linear-gradient(to bottom, #ffffff, #999896);
   cursor: pointer;
 
   &:hover {
@@ -169,16 +168,16 @@
 }
 
 .contact-us__consent input:checked + label::after {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: 7px;
-    width: 4px;
-    height: 10px;
-    border: 2px solid #000000;
-    border-top: none;
-    border-left: none;
-    transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  width: 4px;
+  height: 10px;
+  border: 2px solid #000000;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
 }
 
 .contact-us__consent {
@@ -202,6 +201,10 @@
   background-color: rgba(255, 255, 255, 0.27);
 }
 
+.contact-us__form--second {
+  display: none;
+}
+
 @media (max-width: 1230px) {
   .contact-us__wrapper {
     width: 680px;
@@ -222,5 +225,88 @@
 
   .contact-us__form {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-us {
+    margin: 0;
+    padding-top: 18px;
+    padding-bottom: 28px;
+    background-color: #eeeeed;
+    background-image: none;
+  }
+
+  .contact-us__wrapper {
+    width: 290px;
+  }
+
+  .contact-us__info {
+    display: none;
+  }
+
+  .contact-us__form {
+    display: none;
+    margin-top: 23px;
+  }
+
+  .contact-us__form--second {
+    display: block;
+    width: 290px;
+  }
+
+  .contact-us__form-left {
+    width: 290px;
+  }
+
+  .contact-us__form-title {
+    font-size: 10px;
+    margin: 0;
+    margin-bottom: 19px;
+  }
+
+  .contact-us__form-left input {
+    padding: 8px 15px;
+  }
+
+  .contact-us__form-left input::placeholder {
+    font-size: 9px;
+  }
+
+  .contact-us__consent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px;
+    padding-left: 14px;
+  }
+
+  .contact-us__consent label::before {
+    width: 12px;
+    height: 12px;
+  }
+
+  .contact-us__consent label {
+    width: 240px;
+    font-size: 9px;
+  }
+
+  .contact-us__button {
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-left: 42px;
+    border-radius: 15px;
+    text-transform: initial;
+  }
+
+  .contacts-us__buffer {
+    display: none;
+  }
+
+  .contact-us__consent input:checked + label::after {
+    top: 1px;
+    left: 5px;
+    width: 3px;
+    height: 9px;
   }
 }

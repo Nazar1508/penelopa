@@ -13,6 +13,7 @@
 
 .page-footer__company-name {
   font-size: 12px;
+  text-transform: uppercase;
 }
 
 .page-footer__top {
@@ -26,6 +27,10 @@
   margin-top: 3px;
   margin-left: 179px;
   font-size: 16px;
+}
+
+.page-footer__politic {
+  display: none;
 }
 
 @media (max-width: 1230px) {
@@ -44,3 +49,34 @@
   }
 }
 
+@media (max-width: 700px) {
+  .page-footer {
+    padding-top: 26px;
+    padding-bottom: 11px;
+  }
+
+  .page-footer__wrapper {
+    width: 290px;
+  }
+
+  .page-footer__top {
+    flex-direction: column;
+  }
+
+  .page-footer__list {
+    width: 260px;
+    margin-top: 8px;
+    margin-left: 0;
+  }
+
+  .site-list__item,
+  .page-footer__company-name {
+    font-size: 9px;
+  }
+
+  .page-footer__politic {
+    display: block;
+    font-size: 8px;
+    margin-top: 5px;
+  }
+}

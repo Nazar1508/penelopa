@@ -8,6 +8,7 @@
   font-family: "Raleway", "Arial", sans-serif;
   color: inherit;
   text-decoration: none;
+  text-transform: uppercase;
   transition: 0.2s;
 
   &:hover {
@@ -36,10 +37,22 @@
 
   .site-list__link {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 
   .site-list--close {
     display: none;
+  }
+
+  .site-list--footer {
+    flex-direction: row;
+  }
+
+  .site-list__link--mobile {
+    font-size: 16px;
+  }
+
+  .site-list__link--footer {
+    margin-bottom: 0;
   }
 }

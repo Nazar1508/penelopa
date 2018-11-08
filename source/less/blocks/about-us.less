@@ -1,6 +1,6 @@
 .about-us__wrapper {
   width: 1170px;
-  margin:  0 auto;
+  margin: 0 auto;
   padding-top: 96px;
   padding-bottom: 90px;
   font-family: inherit;
@@ -16,12 +16,13 @@
   margin: 0;
   font-weight: 500;
   font-size: 24px;
+  text-transform: uppercase;
 }
 
 .about-us__description {
   width: 570px;
   font-size: 16px;
-  line-height: 24px
+  line-height: 24px;
 }
 
 .about-us__text {
@@ -64,7 +65,7 @@
     left: -76px;
     width: 415px;
     height: 348px;
-    background-image: url(../img/border.svg);
+    background-image: url("../img/border.svg");
     background-repeat: no-repeat;
     background-size: 415px 348px;
   }
@@ -96,5 +97,73 @@
 
   .about-us__photo::after {
     display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-us {
+    background-color: @lightbrown;
+  }
+
+  .about-us__wrapper {
+    width: 290px;
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+
+  .about-us__title-second {
+    display: none;
+  }
+
+  .about-us__info {
+    margin-top: 25px;
+  }
+
+  .about-us__description {
+    width: 276px;
+    font-size: 9px;
+    line-height: 12px;
+  }
+
+  .about-us__text-item {
+    background-image: url("../img/icon/check-icon-mobile.svg");
+    padding-left: 12px;
+    background-size: 7px 9px;
+    margin-top: 4px;
+  }
+
+  .about-us__photo {
+    width: auto;
+    padding-top: 15px;
+  }
+
+  .about-us__image {
+    width: 290px;
+    height: 226px;
+  }
+
+  .about-us__text--first {
+    margin-top: 25px;
+  }
+
+  .about-us__text {
+    margin-top: 5px;
+  }
+
+  .about-us__text-item--first {
+    margin-top: 3px;
+  }
+
+  .about-us__text-item--2 {
+    width: 200px;
+  }
+
+  .about-us__text-item--3 {
+    margin-top: -1px;
+    width: 200px;
+  }
+
+  .about-us__text-item--4 {
+    width: 200px;
   }
 }
