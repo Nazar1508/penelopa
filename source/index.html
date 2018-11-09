@@ -328,16 +328,25 @@
         </div>
         <form class="contact-us__form" action="#" method="POST">
           <div class="contact-us__form-left">
-            <input type="text" placeholder="Ваше имя*" required>
-            <input type="tel" placeholder="Ваш телефон*" required>
-            <input type="email" placeholder="Ваш email*" required>
+            <label class="visually-hidden" for="name">Ваше имя*</label>
+            <input type="text" id="name" placeholder="Ваше имя*" required>
+
+            <label class="visually-hidden" for="phone">Ваш телефон*</label>
+            <input type="tel" id="phone" placeholder="Ваш телефон*" required>
+
+            <label class="visually-hidden" for="email">Ваш email*</label>
+            <input type="email" id="email" placeholder="Ваш email*" required>
           </div>
           <div class="contact-us__form-right">
-            <textarea name="comments" cols="30" rows="8" placeholder="Ваш комментарий. Для наиболее качественного расчета укажите максимально подробные данные"></textarea>
+            <label class="visually-hidden" for="comments">Ваш комментарий</label>
+            <textarea name="comments" id="comments" cols="30" rows="8" placeholder="Ваш комментарий. Для наиболее качественного расчета укажите максимально подробные данные"></textarea>
             <div class="contact-us__select-file">
               <label class="contact-us__file-label">Прикрепить файл</label>
               <div class="contact-us__file-wpapper">
-                <input class="contact-us__file-value" id="file" type="text" placeholder="Название выбранного файла" readonly>
+                <label class="visually-hidden" for="file-name">Имя файла</label>
+                <input class="contact-us__file-value" id="file-name" type="text" placeholder="Название выбранного файла" readonly>
+
+                <input class="visually-hidden contact-us__empty-input" type="file" id="file">
                 <label for="file">Выбрать файл</label>
               </div>
             </div>
@@ -355,8 +364,11 @@
             Остались вопросы?<br>Отправьте заявку, мы свяжемся с Вами
           </p>
           <div class="contact-us__form-left">
-            <input type="tel" placeholder="Ваш телефон*" required>
-            <input type="email" placeholder="Ваш email*" required>
+            <label class="visually-hidden" for="phone2">Ваш телефон*</label>
+            <input type="tel" id="phone2" placeholder="Ваш телефон*" required>
+
+            <label class="visually-hidden" for="email2">Ваш email*</label>
+            <input type="email" id="email2" placeholder="Ваш email*" required>
           </div>
           <div class="contact-us__consent">
             <input class="visually-hidden" type="checkbox" name="consent" id="consen">
@@ -409,11 +421,7 @@
         </div>
       </div>
       <div class="map__image">
-        <picture>
-          <source type="image/webp" srcset="img/webp/map@1x.webp 1x, img/webp/map@2x.webp 2x">
-          <img class="map__image-item" src="img/map@1x.jpg" srcset="img/map@2x.jpg 2x" alt="Map">
-        </picture>
-        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.4188841684963!2d23.672624682648088!3d52.13513457688566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4721090af341edfd%3A0xb8939a4c2f16892a!2z0LLRg9C70ZbRhtCwINCb0LXQudGC0Y3QvdCw0L3RgtCwINCg0LDQsdGG0LDQstCwIDkwLCDQkdGA0Y3RgdGCIDIyNDAyNSwg0JHRltC70L7RgNGD0YHRjA!5e0!3m2!1suk!2sua!4v1541441806991" width="600" height="450" style="border:0" allowfullscreen></iframe>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.4188841684963!2d23.672624682648088!3d52.13513457688566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4721090af341edfd%3A0xb8939a4c2f16892a!2z0LLRg9C70ZbRhtCwINCb0LXQudGC0Y3QvdCw0L3RgtCwINCg0LDQsdGG0LDQstCwIDkwLCDQkdGA0Y3RgdGCIDIyNDAyNSwg0JHRltC70L7RgNGD0YHRjA!5e0!3m2!1suk!2sua!4v1541441806991" width="600" height="450" style="border:0" allowfullscreen title="map"></iframe>
       </div>
     </div>
   </main>

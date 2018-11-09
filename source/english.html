@@ -322,16 +322,25 @@
         </div>
         <form class="contact-us__form" action="#" method="POST">
           <div class="contact-us__form-left">
-            <input type="text" placeholder="Your name*" required>
-            <input type="tel" placeholder="Your phone number*" required>
-            <input type="email" placeholder="Your email*" required>
+            <label class="visually-hidden" for="name">Your name</label>
+            <input type="text" id="name" placeholder="Your name*" required>
+
+            <label class="visually-hidden" for="phone">Your phone number*</label>
+            <input type="tel" id="phone" placeholder="Your phone number*" required>
+
+            <label class="visually-hidden" for="email">Your email*</label>
+            <input type="email" id="email" placeholder="Your email*" required>
           </div>
           <div class="contact-us__form-right">
-            <textarea name="comments" cols="30" rows="8" placeholder="Your comment. For the most qualitative calculation, specify the most detailed data."></textarea>
+            <label class="visually-hidden" for="comments">Your comment</label>
+            <textarea name="comments" id="comments" cols="30" rows="8" placeholder="Your comment. For the most qualitative calculation, specify the most detailed data."></textarea>
             <div class="contact-us__select-file">
               <label class="contact-us__file-label">Attach file</label>
               <div class="contact-us__file-wpapper">
-                <input class="contact-us__file-value" id="file" type="text" placeholder="The name of selected file" readonly>
+                <label class="visually-hidden" for="file-name">File name</label>
+                <input class="contact-us__file-value" id="file-name" type="text" placeholder="The name of selected file" readonly>
+
+                <input class="visually-hidden contact-us__empty-input" type="file" id="file">
                 <label for="file">select file</label>
               </div>
             </div>
@@ -402,11 +411,7 @@
         </div>
       </div>
       <div class="map__image">
-        <picture>
-          <source type="image/webp" srcset="img/webp/map@1x.webp 1x, img/webp/map@2x.webp 2x">
-          <img class="map__image-item" src="img/map@1x.jpg" srcset="img/map@2x.jpg 2x" alt="Map">
-        </picture>
-        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.4188841684963!2d23.672624682648088!3d52.13513457688566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4721090af341edfd%3A0xb8939a4c2f16892a!2z0LLRg9C70ZbRhtCwINCb0LXQudGC0Y3QvdCw0L3RgtCwINCg0LDQsdGG0LDQstCwIDkwLCDQkdGA0Y3RgdGCIDIyNDAyNSwg0JHRltC70L7RgNGD0YHRjA!5e0!3m2!1suk!2sua!4v1541441806991" width="600" height="450" style="border:0" allowfullscreen></iframe>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.4188841684963!2d23.672624682648088!3d52.13513457688566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4721090af341edfd%3A0xb8939a4c2f16892a!2z0LLRg9C70ZbRhtCwINCb0LXQudGC0Y3QvdCw0L3RgtCwINCg0LDQsdGG0LDQstCwIDkwLCDQkdGA0Y3RgdGCIDIyNDAyNSwg0JHRltC70L7RgNGD0YHRjA!5e0!3m2!1suk!2sua!4v1541441806991" width="600" height="450" style="border:0" allowfullscreen title="map"></iframe>
       </div>
     </div>
   </main>

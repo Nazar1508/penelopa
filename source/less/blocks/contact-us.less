@@ -79,7 +79,7 @@
   }
 }
 
-.contact-us__form input:first-child {
+.contact-us__form input:nth-of-type(1) {
   margin-top: 0;
 }
 
@@ -127,6 +127,7 @@
 
 .contact-us__file-wpapper {
   width: 458px;
+  display: flex;
   margin-left: auto;
 }
 
@@ -134,6 +135,7 @@
   width: 150px;
   margin-left: -5px;
   padding: 19px 9px;
+  text-align: center;
   color: @dark;
   background-image: linear-gradient(to bottom, #ffffff, #999896);
   cursor: pointer;
@@ -203,6 +205,10 @@
 
 .contact-us__form--second {
   display: none;
+}
+
+.contact-us__form .contact-us__empty-input {
+  width: 0;
 }
 
 @media (max-width: 1230px) {
