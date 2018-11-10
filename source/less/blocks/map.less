@@ -16,8 +16,7 @@
 }
 
 .map__iframe {
-  position: absolute;
-  top: 0;
+  display: block;
   width: 100%;
   height: 555px;
 }
@@ -96,7 +95,11 @@
   }
 
   .map-info {
-    top: 25px;
+    position: static;
+  }
+
+  .map__iframe {
+    position: static;
   }
 }
 
@@ -148,8 +151,6 @@
 
   .map__iframe {
     height: 250px;
-    position: static;
-    display: block;
   }
 
   .map__image-item {
